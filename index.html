@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework HTML</title>
+    <title>HTML Homework</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,24 +20,60 @@
         h2,
         h3 {
             color: #333;
+            padding-top: 3rem;
         }
 
         p {
             color: #555;
         }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        nav li {
+            list-style: none;
+        }
     </style>
 </head>
 
 <body>
+
     <header>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
+        <nav>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#js">JAVASCRIPT</a></li>
+        </nav>
     </header>
+
     <main>
         <article>
 
-            <h1>HTML: The Backbone of Web Content</h1>
+            <h1 id="html">HTML: The Backbone of Web Content</h1>
 
             <section>
                 <h2>Origin and Purpose</h2>
@@ -48,7 +84,7 @@
             </section>
 
             <section>
-                <h2>How it Works</h2>
+                <h2>How it Works?</h2>
                 <p>HTML works by using tags to define the structure of content on a web page. For instance, the
                     &lt;p&gt; tag is used to denote paragraphs. Consider a news website - each article's title,
                     paragraphs, and images are defined using HTML tags, ensuring a well-organized and readable layout.
@@ -64,7 +100,7 @@
 
         <article>
 
-            <h2>CSS: Styling the Web</h2>
+            <h2 id="css">CSS: Styling the Web</h2>
 
             <section>
                 <h2>Origin and Purpose</h2>
@@ -75,7 +111,7 @@
             </section>
 
             <section>
-                <h2>How it Works</h2>
+                <h2>How it Works?</h2>
                 <p>Think of a personal blog. HTML structures the blog's content, while CSS is responsible for styling
                     it. CSS can define the blog's background color, font choices, and layout, ensuring a visually
                     appealing and consistent design across all pages.</p>
@@ -91,7 +127,7 @@
 
         <article>
 
-            <h2>JavaScript: Powering Interactivity</h2>
+            <h2 id="js">JavaScript: Powering Interactivity</h2>
 
             <section>
                 <h2>Origin and Purpose</h2>
@@ -101,7 +137,7 @@
             </section>
 
             <section>
-                <h2>How it Works</h2>
+                <h2>How it Works?</h2>
                 <p>Consider an online shopping cart. JavaScript enables dynamic features like updating the cart in
                     real-time without refreshing the page. It handles actions like adding items, calculating totals, and
                     adjusting quantities, providing a seamless and interactive user experience.</p>
